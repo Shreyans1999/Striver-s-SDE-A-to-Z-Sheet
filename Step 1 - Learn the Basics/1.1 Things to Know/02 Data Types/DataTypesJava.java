@@ -1,3 +1,4 @@
+import java.util.*;
 public class DataTypesJava {
     public static void main(String[] args) {
         // Primitive Data Types
@@ -14,16 +15,16 @@ public class DataTypesJava {
         String stringVar = "Hello, Java!";
         int[] intArray = {1, 2, 3, 4, 5};
 
-        // Displaying values
-        System.out.println("byte: " + byteVar);
-        System.out.println("short: " + shortVar);
-        System.out.println("int: " + intVar);
-        System.out.println("long: " + longVar);
-        System.out.println("float: " + floatVar);
-        System.out.println("double: " + doubleVar);
-        System.out.println("char: " + charVar);
-        System.out.println("boolean: " + boolVar);
-        System.out.println("String: " + stringVar);
-        System.out.println("Array: " + java.util.Arrays.toString(intArray));
+        // Displaying the values and types
+        System.out.println("byte: " + byteVar + " | Type: " + ((Object) byteVar).getClass().getName());
+        System.out.println("short: " + shortVar + " | Type: " + ((Object) shortVar).getClass().getName());
+        System.out.println("int: " + intVar + " | Type: " + ((Object) intVar).getClass().getName());
+        System.out.println("long: " + longVar + " | Type: " + ((Object) longVar).getClass().getName());
+        System.out.println("float: " + floatVar + " | Type: " + ((Object) floatVar).getClass().getName());
+        System.out.println("double: " + doubleVar + " | Type: " + ((Object) doubleVar).getClass().getName());
+        System.out.println("char: " + charVar + " | Type: " + ((Object) charVar).getClass().getName());
+        System.out.println("boolean: " + boolVar + " | Type: " + ((Object) boolVar).getClass().getName());
+        System.out.println("String: " + stringVar + " | Type: " + stringVar.getClass().getName());
+        System.out.println("Array: " + Arrays.toString(intArray) + " | Type: " + intArray.getClass().getName());
     }
 }
