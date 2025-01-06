@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class UserIO {
+public class Input_Output {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
