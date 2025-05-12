@@ -3,7 +3,7 @@
 class RecursionSum {
 
     // Recursive function to calculate sum of series 1^3 + 2^3 + ... + n^3
-    public static int sumOfSeries(int n) {
+    public int sumOfSeries(int n) {
         // Base case
         if (n == 1) {
             return 1;
@@ -13,10 +13,10 @@ class RecursionSum {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        RecursionSum Solution = new RecursionSum();
         
         // Example usage
-        System.out.println("Sum of series for n=5: " + RecursionSum.sumOfSeries(5)); // Output: 225
-        System.out.println("Sum of series for n=7: " + RecursionSum.sumOfSeries(7)); // Output: 784
+        System.out.println("Sum of series for n=5: " + Solution.sumOfSeries(5)); // Output: 225
+        System.out.println("Sum of series for n=7: " + Solution.sumOfSeries(7)); // Output: 784
     }
 }
